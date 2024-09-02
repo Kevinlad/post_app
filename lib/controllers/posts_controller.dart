@@ -17,8 +17,6 @@ class PostController extends GetxController {
   }
 
   void fetchPosts() async {
-
-
     try {
       isLoading(true);
       final response = await http
@@ -85,6 +83,4 @@ class PostController extends GetxController {
       posts.refresh();
     }
   }
-
-
 }
